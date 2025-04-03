@@ -1,0 +1,22 @@
+1st time : 
+
+conda create mystreamlit
+pip install streamlit
+pip install myplotlib
+pip install scipy
+pip install soundfile
+
+puis 
+
+anaconda prompt 
+
+et dedans : 
+
+conda activate mystreamlit
+cd .\OneDrive - UMONS\Documents\Projets\iDSP\MyPython\
+streamlit run 
+
+Pour déployer : 
+creer un git avec le pytho + packages/txt et requirements.txt
+depuis l'app streamit, faire manage app/déploy + your apps et y ajouter le lien vers la nouveau github
+
