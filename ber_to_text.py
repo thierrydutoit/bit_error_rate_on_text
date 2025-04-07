@@ -29,7 +29,7 @@ st.markdown('''What is the actual effect of a given bit error rate on text? \\
 
 col1, col2 = st.columns(2)
 
-ber = st.slider("Bit Error Rate (BER)", 0.0, 0.1, 0.001, 0.001, format="%0.3f")
+ber = st.slider("Bit Error Rate (BER)", 0.0, 0.1, 0.1, 0.001, format="%0.3f")
 
 with col1:
    st.subheader("Emitted message:")
