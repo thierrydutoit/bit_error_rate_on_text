@@ -37,14 +37,15 @@ with col1:
    bits = text_to_bits(message)     
    
 
-with col2:
-   st.subheader("Received message:")
-   st.write(f"Number of bits: {len(bits)}")
+if message:
+   with col2:
+       st.subheader("Received message:")
+       st.write(f"Number of bits: {len(bits)}")
        
-   bits_with_errors = introduce_errors(bits, ber)
-   reconstructed_message = bits_to_text(bits_with_errors)
-      
-   st.text(reconstructed_message)
+       bits_with_errors = introduce_errors(bits, ber)
+       reconstructed_message = bits_to_text(bits_with_errors)
+       
+       st.text(reconstructed_message)
 
    fig,ax = plt.subplots(figsize=(10,4))
 
