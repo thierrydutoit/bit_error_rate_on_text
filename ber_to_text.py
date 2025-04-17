@@ -59,7 +59,7 @@ if message:
    st.pyplot(fig)
 
 with st.expander("Open for comments"):
-   st.markdown('''Obviously, a BER of 0.01 or lower makes transmision errors acceptable
-                  to the eye. \\
-                  Notice that, in practice, error correction codes can be added to 
+   st.markdown('''Obviously, a BER of 0.001 (or lower) on textual information makes transmision
+                  errors acceptable to the eye. \\
+                  Notice that, in practice, error correction codes can still be added to 
                   encoded bits, to detect and correct such transmission errors.''')
